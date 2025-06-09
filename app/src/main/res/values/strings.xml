@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Family Tracker</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="host">*.satishk.com</string>
+    <string name="base">https://www.satishk.com/</string>-->
+    <string name="host_name">https://www.satishk.com/maps_api/</string>
+    <string name="send_locations">track</string>
+</resources>

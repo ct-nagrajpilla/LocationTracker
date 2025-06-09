@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "2618407719",
+    "project_id": "family-tracker-c0ca7",
+    "storage_bucket": "family-tracker-c0ca7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2618407719:android:7f4baa3e42d177879c8702",
+        "android_client_info": {
+          "package_name": "com.aniapps.locationtracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDebQvT3vQysNR7BngwcnWFbCWSqZU2xuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

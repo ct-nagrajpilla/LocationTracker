@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/alert_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="start"
+        android:padding="2dp"
+        android:text="@string/app_name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#808080" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/alert_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="start|center_horizontal"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="3sp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ok"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="OK"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Cancel"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

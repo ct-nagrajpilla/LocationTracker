@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <!-- Dropdown and Button Section -->
+        <LinearLayout
+            android:id="@+id/layInitial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etName"
+                style="@style/etStyleSoldInv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="Name" />
+
+
+            <!-- Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="42sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/btnrounded"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="START"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <!-- Dropdown 1 -->
+        <LinearLayout
+            android:id="@+id/layDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spName"
+                style="@style/spStyleInvSold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spDate"
+                style="@style/spStyleInvSold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+        <!-- Map Section -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/trackerMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
