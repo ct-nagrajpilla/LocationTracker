@@ -6,4 +6,6 @@
     <string name="base">https://www.satishk.com/</string>-->
     <string name="host_name">https://www.satishk.com/maps_api/</string>
     <string name="send_locations">track</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="location_permissions_are_required_for_this_app_to_work_please_grant_permissions_in_the_app_settings">Location permissions are required for this app to work. Please grant permissions in the app settings</string>
 </resources>
